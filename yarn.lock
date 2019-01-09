@@ -4999,6 +4999,11 @@ neo-async@^2.5.0:
   resolved "http://registry.npm.taobao.org/neo-async/download/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
   integrity sha1-udFeTXHGdikIZUtRg+04t1M0CDU=
 
+nes.css@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/nes.css/download/nes.css-1.0.0.tgz#8f54a1440936d3b6d9002cd73d5304020e7b8cc1"
+  integrity sha1-j1ShRAk207bZACzXPVMEAg57jME=
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "http://registry.npm.taobao.org/nice-try/download/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"

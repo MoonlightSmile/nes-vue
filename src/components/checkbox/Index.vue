@@ -57,9 +57,7 @@ export default class Checkbox extends Vue {
     const currentType: string = typeof this.value;
     const resValue: Value = this.computedValue(currentType, value);
     if (this.checked.includes(resValue)) {
-      const index = this.checked.findIndex((val: string) => {
-        return val === resValue;
-      });
+      const index = this.checked.findIndex((val: string) => val === resValue);
       this.$delete(this.checked, index);
     } else {
       this.checked.push(resValue);

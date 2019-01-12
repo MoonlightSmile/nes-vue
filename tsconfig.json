@@ -8,7 +8,6 @@
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
-    "noImplicitAny": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,

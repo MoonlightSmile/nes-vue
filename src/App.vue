@@ -28,16 +28,17 @@
       :label="label"
       :value="String(OValue)"
     />
-
+    <p style="color: red">val:{{value}}</p>
     <e-radio-group
       v-model="value2"
       :options="list"
     ></e-radio-group>
-
+    <p style="color: red">val:{{value2}}</p>
     <e-radio-group
       v-model="value3"
       :options="yesOrNo"
     ></e-radio-group>
+    <p style="color: red">val:{{value3}}</p>
     <e-checkbox
       v-model="value4"
       v-for="{value, label} in list"
@@ -46,6 +47,7 @@
       :label="label"
       :options="list"
     ></e-checkbox>
+    <p style="color: red">val:{{value4}}</p>
   </div>
 </template>
 <script lang="ts">
@@ -74,7 +76,7 @@ export default class App extends Vue {
   private value: string = '3';
   private value2: number = 3;
   private value3: boolean = false;
-  private value4: any[] = [];
+  private value4: number[] = [3];
   private list: Options[] = [
     {
       label: 'apple',

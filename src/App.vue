@@ -38,6 +38,14 @@
       v-model="value3"
       :options="yesOrNo"
     ></e-radio-group>
+    <e-checkbox
+      v-model="value4"
+      v-for="{value, label} in list"
+      :key="value"
+      :value="value"
+      :label="label"
+      :options="list"
+    ></e-checkbox>
   </div>
 </template>
 <script lang="ts">
@@ -46,6 +54,7 @@ import EButton from '@/components/button/Index.vue';
 import EContainer from '@/components/container/Index.vue';
 import ERadio from '@/components/radio/Index.vue';
 import ERadioGroup from '@/components/radio/RadioGroup.vue';
+import ECheckbox from '@/components/checkbox/Index.vue';
 
 interface Options {
   label: string;
@@ -58,12 +67,14 @@ interface Options {
     EContainer,
     ERadio,
     ERadioGroup,
+    ECheckbox,
   },
 })
 export default class App extends Vue {
   private value: string = '3';
   private value2: number = 3;
   private value3: boolean = false;
+  private value4: any[] = [];
   private list: Options[] = [
     {
       label: 'apple',

@@ -684,6 +684,11 @@
   resolved "http://registry.npm.taobao.org/@types/chai/download/@types/chai-4.1.7.tgz#1b8e33b61a8c09cbe1f85133071baa0dbf9fa71a"
   integrity sha1-G44zthqMCcvh+FEzBxuqDb+fpxo=
 
+"@types/dom-inputevent@^1.0.3":
+  version "1.0.3"
+  resolved "http://registry.npm.taobao.org/@types/dom-inputevent/download/@types/dom-inputevent-1.0.3.tgz#7831e0628a98a04bbac450c95220ded6e04a1f84"
+  integrity sha1-eDHgYoqYoEu6xFDJUiDe1uBKH4Q=
+
 "@types/mocha@^5.2.4":
   version "5.2.5"
   resolved "http://registry.npm.taobao.org/@types/mocha/download/@types/mocha-5.2.5.tgz#8a4accfc403c124a0bafe8a9fc61a05ec1032073"

@@ -1,18 +1,20 @@
 <template>
   <div :class="computedClass">
-    <p v-if="title" class="title">{{ title }}</p>
-    <p v-if="content">{{ content }}</p>
+    <p
+      v-if="title"
+      class="title"
+    >{{ title }}</p>
     <slot></slot>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Model, Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component({
   name: 'NContainer',
 })
-export default class YourComponent extends Vue {
+export default class Container extends Vue {
   @Prop({ type: String, default: '' })
   private title!: string;
 
@@ -22,15 +24,14 @@ export default class YourComponent extends Vue {
   @Prop({ type: Boolean, default: false })
   private rounded!: boolean;
 
-  @Prop({ type: String, default: '' })
-  private content!: string;
-
   private get computedClass(): object {
+    const { title, dark, rounded } = this;
+    const isTitle: boolean = Boolean(title);
     return {
       'nes-container': true,
-      'with-title': this.title,
-      'is-dark': this.dark,
-      'is-rounded': this.rounded,
+      'with-title': isTitle,
+      'is-dark': dark,
+      'is-rounded': rounded,
     };
   }
 }
